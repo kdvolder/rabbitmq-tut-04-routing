@@ -35,7 +35,7 @@ public class EmitLogDirect {
 		}
 	}
 
-	private static final String EXCHANGE_NAME = "logs";
+	private static final String EXCHANGE_NAME = "logs-direct";
 
     public static void main(String[] argv)
                   throws java.io.IOException {

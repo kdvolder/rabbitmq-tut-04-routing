@@ -3,15 +3,15 @@ import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.QueueingConsumer;
 
-public class ReceiveLogs {
+public class ReceiveLogsDirect {
 
 	private String[] severities;
 
-	public ReceiveLogs(String... severities) {
+	public ReceiveLogsDirect(String... severities) {
 		this.severities = severities;
 	}
 	
-	private final static String EXCHANGE_NAME = "logs";
+	private final static String EXCHANGE_NAME = "logs-direct";
 
 	public void run() throws Exception {
 		ConnectionFactory factory = new ConnectionFactory();

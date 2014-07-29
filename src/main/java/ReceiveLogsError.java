@@ -5,7 +5,7 @@ public class ReceiveLogsError {
 	 * Receives only the log messages in the error category.
 	 */
 	public static void main(String[] args) throws Exception {
-		new ReceiveLogs("error").run();
+		new ReceiveLogsDirect("error").run();
 	}
 	
 }
