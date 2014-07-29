@@ -1,7 +1,7 @@
 RabbitMQ Routing with Maven and Eclipse
 =======================================
 
-Code based on the [RabbitMQ Routing](http://www.rabbitmq.com/tutorials/tutorial-four-java.html).
+Code based on the [RabbitMQ Routing Tutorial](http://www.rabbitmq.com/tutorials/tutorial-four-java.html).
 
 Minor modifications to make this more convenient to run from inside Eclipse with the help of m2e.
 
@@ -27,8 +27,9 @@ Java Application". You can create additional Eclipse Console Views and pin one c
 to each process you start. Any messages you type in one of the "EmitLogDirect" console
 will be broadcast. "RecieveLogsError" processes will only receive 'error' messages.
 "ReceiveLogsAll" will receive "error", "info" and "warning" messages.
+
 Besides valid 'error', 'info' and 'warning' severities, you can in fact also type
-any arbitrary strings as 'severity'. Messages with invalid severities are sent,
-but dropped by the broker because no one is listening to them.
+arbitrary strings as severity. Messages with invalid severities are silently
+dropped by the broker because no one is listening to them.
 
 Emit and Receive processes can be killed / started any time.
